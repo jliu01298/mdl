@@ -1,0 +1,40 @@
+constants dull_yellow 0.3 0.8 0.2 0.3 0.8 0.2 0 0 0
+///Sphere
+push
+move 250 150 0
+sphere dull_yellow 0 0 0 100
+pop
+///Ring 1
+push
+move 250 150 0
+rotate x 45
+rotate y 45
+torus dull_yellow 0 0 0 20 100
+pop
+///Ring 2
+push
+move 250 150 0
+rotate x 45
+rotate y 45
+rotate x 90
+torus dull_yellow 0 0 0 20 100
+pop
+///Ring 3
+push
+move 250 150 0
+rotate x 45
+rotate y 45
+rotate x 90
+rotate z 90
+torus dull_yellow 0 0 0 20 100
+pop
+///Cross
+push
+move 250 150 0
+rotate x 45
+rotate y 45
+box dull_yellow -25 400 25 50 300 50
+box dull_yellow -100 300 25 200 50 50
+pop
+display
+save gc.png
